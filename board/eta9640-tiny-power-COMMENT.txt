@@ -1,0 +1,10 @@
+PCB Color: Purple
+
+Mark on PCB: 2D barcode (Serial Number)
+Скрин в usb-c ETA9640 single sided BARCODE.PNG
+2D Barcode Size: 5x5mm
+2D Barcode position: Specify Position
+Everything else in barcode by default (2D barcode only, QR Code, no prefix)
+
+PCBA Type: Economy
+Assembly side: Top
