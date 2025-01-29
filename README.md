@@ -37,7 +37,7 @@ Unfortunately, I can't share the project files since they were made in a proprie
 
 - [Schematic.pdf](schematic.pdf "Schematic.pdf"): board schematic
 - [Board folder](board "Board folder"): all files required for ordering on [JLCPCB](http://jlcpcb.com "JLCPCB")
-- [Board/eta9640-tiny-power PCB.ZIP](board/eta9640-tine-power-PCB.ZIP "Board/eta9640-tiny-power PCB.ZIP"): Gerber files ZIP
+- [Board/eta9640-tiny-power PCB.ZIP](board/eta9640-tiny-power-PCB.ZIP "Board/eta9640-tiny-power PCB.ZIP"): Gerber files ZIP
 - [Board/eta9640-tiny-power-BOM.xls](board/eta9640-tiny-power-BOM.xls "Board/eta9640-tiny-power-BOM.xls"): Bill of materials file
 - [Board/eta9640-tiny-power-PNP.csv](board/eta9640-tiny-power-PNP.csv "Board/eta9640-tiny-power-PNP.csv"): Pick and place file
 - [Board/eta9640-tiny-power-COMMENT.txt](board/eta9640-tiny-power-COMMENT.txt "Board/eta9640-tiny-power-COMMENT.txt"): JLCPCB ordering notes (do not send to JLCPCB)
