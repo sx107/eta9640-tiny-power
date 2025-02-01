@@ -4,6 +4,7 @@ Tiny ETA9640 Li-Ion USB-C battery charger and 5V booster / 5V UPS board
 This is a tiny board that provides single-cell Li-Ion charging through USB-C (no QC or PD, just 5V 1A max) or external power and 5V boost output.
 
 This is not a powerbank board: it only receives and does not output any power through the USB-C connector.
+This board does not include battery protection! Use cells that have it integrated.
 
 ![Board photo](photo.jpg?raw=true "Board photo")
 ![Board image](board.png?raw=true "Board image")
@@ -16,7 +17,7 @@ This is not a powerbank board: it only receives and does not output any power th
 - Selectable charge current (0.2A, 0.5A, 1A or Adjustable via 0603 resistor)
 - Output enable pin
 - Low-power support: ETA9640 always outputs 5V unless the EN pin is pulled low, no minimum load required
-- Gas gauge LED, that blinks and shows the remaining battery charge when the board is charging or when it is outputting any power. This 0603 LED may be desoldered for low-power applications
+- Gas gauge LED, that blinks and shows the remaining battery charge when the board is charging or when it is outputting any power (more than about 30uA). This 0603 LED may be desoldered for low-power applications
 - Output power not interrupted when charging starts: this board works almost as an uninterraptable power supply (UPS)
 
 ## Main characteristics
@@ -27,7 +28,7 @@ This is not a powerbank board: it only receives and does not output any power th
 - Absolute maximum input voltage: -15V for negative voltages, 27V for positive
 - Boost efficiency up to 96% at 0.2-0.3A output current
 - Charge current: 0.1-1A
-- Quiescent current (5V boost on / EN pin high, no load): around 100-200uA with LED desoldered
+- Quiescent current (5V boost on / EN pin high, no load): around 100-200uA *with LED desoldered*
 - Shutdown current (5V boost off / EN pin low): 10uA max
 
 ## Shared files
@@ -46,6 +47,9 @@ Unfortunately, I can't share the project files since they were made in a proprie
 ## Parts datasheets
 - ETA9640: [ETA9640 datasheet](http://www.eta-semi.com/wp-content/uploads/2022/03/ETA9640_V1.5.pdf "ETA9640 datasheet")
 - LM73100: [LM73100 datasheet](https://www.ti.com/lit/ds/symlink/lm7310.pdf "LM73100 datasheet")
+
+## Todo for next version
+- Make it so that the LED blinks only during charging
 
 ## License
 
